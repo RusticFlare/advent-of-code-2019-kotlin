@@ -1,9 +1,13 @@
 plugins {
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.7.0"
 }
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    implementation("io.arrow-kt:arrow-core:1.1.2")
 }
 
 tasks {
