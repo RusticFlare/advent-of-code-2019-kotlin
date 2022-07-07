@@ -1,6 +1,7 @@
+package io.github.rusticflare.aoc
+
 import arrow.core.Some
 import arrow.core.getOrElse
-import arrow.core.traverse
 
 fun main() {
 
@@ -13,7 +14,7 @@ fun main() {
 
     fun part2(input: List<String>) = input.sumOf { massOfFuelForFuel(it.toInt()) }
 
-    val input = readInput("Day01")
+    val input = readInputLines("Day01")
     println(part1(input))
     println(part2(input))
 }

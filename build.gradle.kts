@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
+
 plugins {
     kotlin("jvm") version "1.7.0"
 }
@@ -20,4 +22,8 @@ tasks {
     wrapper {
         gradleVersion = "7.3"
     }
+}
+
+tasks.withType<KotlinJvmCompile> {
+    kotlinOptions.freeCompilerArgs += "-Xcontext-receivers"
 }
